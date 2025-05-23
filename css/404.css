@@ -1,0 +1,20 @@
+.notFoundContainer {
+    width: 100%;
+    height: 50%;
+    margin-top: 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+#cat-stretch {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

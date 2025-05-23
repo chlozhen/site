@@ -1,0 +1,131 @@
+/* Styling for general ids/classes */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+button {
+    background-color: #f5eaf4;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.page {
+    margin: 50px;
+    flex: 0 1;
+    text-align: center;
+}
+
+.img {
+    padding: 4px;
+    border-radius: 1px;
+    margin-bottom: 4px;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Page: WELCOME */
+#welcome {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Page: OTHER */
+.row {
+    padding: 1px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+
+
+/* Styling for zoom lens in images */
+.img-magnifier-container {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 1px;
+    margin-bottom: 1px;
+    flex: 100%;
+}
+
+.img-magnifier-glass {
+    position: absolute;
+    border: 3px solid purple;
+    border-radius: 50%;
+    cursor: pointer;
+    /*Set the size of the magnifier glass:*/
+    width: 100px;
+    height: 100px;
+}
+
+/* Styling for gallery */
+.gallery_row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+#gallery_Header {
+    text-align: right;
+    font-size: 80%;
+}
+
+.gallery_col {
+    -ms-flex: 50%;
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.gallery_col img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.gallery_btn {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background-color: rgb(167, 155, 167);
+    cursor: pointer;
+    color: white;
+}
+
+.gallery_btn:hover {
+    background-color: rgb(189, 74, 189);
+}
+
+.gallery_btn.gallery_active {
+    background-color: purple;
+    color: white;
+}
+
+/* Create buttons for pages */
+#page_Header {
+    text-align: center;
+
+}
+
+.page_btn {
+    border: none;
+    outline: none;
+    padding: 15px 80px;
+    background-color: #f8f4f800;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+.page_btn:hover {
+    background-color: rgb(233, 247, 200);
+    border: 40px rgb(201, 247, 94);
+    border-radius: 50%;
+}
+
+.page_btn.page_active {
+    background-color: rgb(201, 247, 94);
+    border-radius: 50%;
+    color: black;
+}
