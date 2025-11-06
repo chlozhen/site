@@ -108,6 +108,7 @@ button {
 /* ******************************************************* */
 /* Main page content ************************************* */
 /* ******************************************************* */
+/* Home */
 #main {
     padding: 20px;
     text-align: center;
@@ -115,16 +116,23 @@ button {
 #sitename a {
     align-items: center;
     color:#2f1738;
+    margin-bottom: 20px;
 }
 #title {
     font-size: 50px;
     font-family: "Bungee Shade", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     text-align: center;
     width: 100%;
+}
+.page {
+    margin: 40px;
+    flex: 0 1;
+    text-align: center;
+    align-items: center;
 }
 #left_Panel {
     width: 40%;
@@ -160,14 +168,27 @@ button {
     font-family: sans-serif;
     padding-left: 30px;
 }
-
-.page {
-    margin: 20px;
-    flex: 0 1;
-    text-align: center;
-    align-items: center;
+/* Work Experience */
+#center_Panel {
+    width: 700px;
+    float: center;
+    align-items: left;
+    text-align: left;
+    margin: 0 auto;
 }
-
+.resume_category{
+    font-size: 20px;
+}
+.resume_subhead {
+    font-family: sans-serif;
+    font-size: 18px;
+    color:#2f1738;
+}
+.resume_bullets {
+    font-family: sans-serif;
+    font-size: 16px;
+    color:#111;
+}
 
 
 
