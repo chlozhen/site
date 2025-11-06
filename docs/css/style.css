@@ -11,13 +11,14 @@ button {
     margin: 0px;
 }
 
-/* Headers and Navigation */
+/* ******************************************************* */
+/* Headers and Navigation ******************************** */
+/* ******************************************************* */
 #page_Header {
     /* top bar for all navigation methods */
     background-color: #111;
     padding: 10px;
 }
-
 #main_Nav {
     /* main navigation on top, for PC */
     text-align: center;
@@ -25,17 +26,13 @@ button {
     padding: 0px;
     margin: 0px;
 }
-
 #bars_Nav { 
     /* bar icon for mobile navigation */
     color:#e0c8e8;
     font-size: 25px;
     padding: 3px;
 }
-#bars_Nav:hover {
-  cursor: pointer;
-}
-
+#bars_Nav:hover {cursor: pointer;}
 #side_Nav {
     /* side navigation on side, for mobile */
     text-align: left;
@@ -43,11 +40,9 @@ button {
     font-size: 25px;
     padding-top: 80px;
 }
-
 #side_btn {
     /* side navigation menu buttons */
 }
-
 /* Page buttons for main and side navigation */
 .page_btn {
     border: none;
@@ -58,30 +53,9 @@ button {
     color:#e0c8e8;
     background-color: #111;
 }
-.page_btn:hover {
-    color: rgb(201, 247, 94);
-
-}
-.page_btn.page_active {
-    color: rgb(201, 247, 94);
-}
-
-
-/* Main page content */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-
-#title {
-    margin-top: 1px;
-    text-align: center;
-    width: 100%;
-    font-size: 40px;
-}
-
+.page_btn:hover {color: rgb(201, 247, 94);}
+.page_btn.page_active {color: rgb(201, 247, 94);}
 /* The side navigation menu */
-/* https://www.w3schools.com/howto/howto_js_sidenav.asp */
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -94,7 +68,6 @@ button {
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
-
 /* The navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 32px;
@@ -104,12 +77,10 @@ button {
   display: block;
   transition: 0.3s;
 }
-
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: rgb(201, 247, 94);
 }
-
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
@@ -118,43 +89,93 @@ button {
   font-size: 36px;
   margin-left: 50px;
 }
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
 @media only screen and (max-width: 600px) {
-    #main_Nav {
-        display: none;
-    }
+    #main_Nav {display: none;}
 }
-
 @media only screen and (min-width: 601px) {
-    #bars_Nav-container {
-        display: none;
-    }
-    #bars_Nav {
-        display: none;
-    }
-    #side_Nav {
-        display: none;
-    }
+    #bars_Nav-container {display: none;}
+    #bars_Nav {display: none;}
+    #side_Nav {display: none;}
 }
 
 
 
-
-
-
-
-
-.page {
-    margin: 50px;
-    flex: 0 1;
+/* ******************************************************* */
+/* Main page content ************************************* */
+/* ******************************************************* */
+#main {
+    padding: 20px;
     text-align: center;
 }
+#sitename a {
+    align-items: center;
+    color:#2f1738;
+}
+#title {
+    font-size: 50px;
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+#left_Panel {
+    width: 40%;
+    float: left;
+    align-items: right;
+    text-align: right;
+    margin: 0 auto;
+}
+#left_column {
+    width: 200px;
+    float: right;
+}
+#portrain {align-items: inherit;}
+#box {text-align: inherit;}
+#right_Panel {
+    width: 60%;
+    float: right;
+    align-items: left;
+    text-align: left;
+    margin: 0 auto;
+}
+#right_column {
+    width: 500px;
+    float: left;
+}
+#left_home_txt {
+    font-family: sans-serif;
+    margin-top: 35px;
+    text-align: center;
+    
+}
+#main_home_txt {
+    font-family: sans-serif;
+    padding-left: 30px;
+}
+
+.page {
+    margin: 20px;
+    flex: 0 1;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
 
 .img {
     padding: 4px;
@@ -163,23 +184,6 @@ button {
     height: auto;
     max-width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Page: OTHER */
 .row {

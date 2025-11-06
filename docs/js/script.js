@@ -53,7 +53,6 @@ function closeNav() {
 
 function magnify(imgID, zoom) {
     // allow users to use a magnify an image
-    // reference: https://www.w3schools.com/howto/howto_js_image_magnifier_glass.asp
     var img, glass, w, h, bw;
     img = document.getElementById(imgID);
 
@@ -170,7 +169,7 @@ $('.answer').on('click', function () {
     revealAnswer(clear)
 })
 
-// Gallery layout changes (reference: https://www.w3schools.com/howto/howto_js_image_grid.asp)
+// Gallery layout changes 
 var elements = document.getElementsByClassName("gallery_col");
 var i;
 
