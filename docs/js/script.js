@@ -13,18 +13,28 @@ function show(elementID) {
     ele.style.display = 'block';
 }
 
-function setButtonState(headerID, buttonClass, activeClass) {
+function setButtonState(buttonClass, activeClass) {
     // Add active class to the current button (highlight it)
-    var header = document.getElementById(headerID);
-    var btns = header.getElementsByClassName(buttonClass);
+    var btns = document.getElementsByClassName(buttonClass);
     for (var i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function () {
-            var current = document.getElementsByClassName(activeClass);
-            current[0].className = current[0].className.replace(" " + activeClass, "");
-            this.className += " " + activeClass;
+            // remove active class on current active buttons
+            var active_btns = document.getElementsByClassName(activeClass);
+            const active_length = active_btns.length
+            for (var i = 0; i < active_length; i++) {
+                active_btns[0].className = active_btns[0].className.replace(" " + activeClass, "")
+            }
+            // add active class to buttons clicked
+            var inactive_btns = document.getElementsByClassName(this.className);
+            for (var i = 0; i < inactive_btns.length; i++) {
+                inactive_btns[i].className += " " + activeClass;
+            }
         });
     }
 }
+
+// Set page buttons
+setButtonState("page_btn", "page_active")
 
 // Side Navigation
 function openNav() {
@@ -118,9 +128,6 @@ function removeActive(jokes) {
         }
     });
 }
-
-// Set page buttons
-setButtonState("main_Nav", "page_btn", "page_active")
 
 // Initiate magnifying mechanism
 magnify("miaprofile", 3)
