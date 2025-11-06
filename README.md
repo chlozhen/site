@@ -16,3 +16,11 @@ Code:
   * https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp
   * https://www.w3schools.com/howto/howto_js_image_magnifier_glass.asp
   * https://www.w3schools.com/howto/howto_js_image_grid.asp
+
+
+
+  TODO:
+  * change all buttons depending on current page
+  * add 404 page
+  * clean up html into separate files
+  * maybe later: make sure sidebar disappears if resized larger, and main page is centered again
