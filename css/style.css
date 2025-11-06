@@ -6,9 +6,133 @@
 html,
 body,
 button {
-    background-color: #f5eaf4;
-    font-family: 'Courier New', Courier, monospace;
+    background: #e0c8e8;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0px;
 }
+
+/* Headers and Navigation */
+#page_Header {
+    background-color: #111;
+    padding: 10px;
+}
+
+#main_Nav {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#bars_Nav { 
+    color:#e0c8e8;
+    font-size: 20px;
+}
+
+#bars_Nav:hover {
+  cursor: pointer;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+.page_btn {
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color:#e0c8e8;
+    background-color: #111;
+}
+
+.page_btn:hover {
+    color: rgb(201, 247, 94);
+
+}
+
+.page_btn.page_active {
+    color: rgb(201, 247, 94);
+}
+
+#title {
+    margin-top: 1px;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+}
+
+/* The side navigation menu */
+/* https://www.w3schools.com/howto/howto_js_sidenav.asp */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #dcbde6;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: rgb(201, 247, 94);
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (max-width: 570px) {
+    #main_Nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 570px) {
+    #bars_Nav-container {
+        display: none;
+    }
+    #bars_Nav {
+        display: none;
+    }
+    #side_Nav {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
 
 .page {
     margin: 50px;
@@ -24,12 +148,22 @@ button {
     max-width: 100%;
 }
 
-/* Page: WELCOME */
-#welcome {
-    margin-top: 50px;
-    text-align: center;
-    width: 100%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Page: OTHER */
 .row {
@@ -37,7 +171,6 @@ button {
     border-radius: 10px;
     margin-bottom: 2px;
 }
-
 
 /* Styling for zoom lens in images */
 .img-magnifier-container {
@@ -103,29 +236,3 @@ button {
     color: white;
 }
 
-/* Create buttons for pages */
-#page_Header {
-    text-align: center;
-
-}
-
-.page_btn {
-    border: none;
-    outline: none;
-    padding: 15px 80px;
-    background-color: #f8f4f800;
-    cursor: pointer;
-    font-size: 100%;
-}
-
-.page_btn:hover {
-    background-color: rgb(233, 247, 200);
-    border: 40px rgb(201, 247, 94);
-    border-radius: 50%;
-}
-
-.page_btn.page_active {
-    background-color: rgb(201, 247, 94);
-    border-radius: 50%;
-    color: black;
-}

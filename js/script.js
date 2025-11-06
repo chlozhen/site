@@ -26,6 +26,20 @@ function setButtonState(headerID, buttonClass, activeClass) {
     }
 }
 
+// Side Navigation
+function openNav() {
+    // Set the width of the side navigation to 250px and the left margin of the page content to 250px
+  document.getElementById("side_Nav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    // Set the width of the side navigation to 0 and the left margin of the page content to 0 
+  document.getElementById("side_Nav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+
 function magnify(imgID, zoom) {
     // allow users to use a magnify an image
     // reference: https://www.w3schools.com/howto/howto_js_image_magnifier_glass.asp
@@ -105,7 +119,7 @@ function removeActive(jokes) {
 }
 
 // Set page buttons
-setButtonState("page_Header", "page_btn", "page_active")
+setButtonState("main_Nav", "page_btn", "page_active")
 
 // Initiate magnifying mechanism
 magnify("miaprofile", 3)
