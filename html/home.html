@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chloe Zheng</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/32976dc9ad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- Header -->
+    <div id="page_Header">
+        <span id="bars_Nav" class="fa fa-bars" aria-hidden="true" onclick="openNav()"></span>
+        <p id="main_Nav">
+            <button class="page_btn page_active" onclick="show('Page0');">Home</button>
+            <button class="page_btn" onclick="show('Page1');">Work Experience</button>
+            <button class="page_btn" onclick="show('Page2');">Movement</button>
+            <button class="page_btn" onclick="show('Page3');">Family & Friends</button>
+        </p>
+    </div>
+
+<!-- Sidebar -->
+    <div id="side_Nav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="page_btn" onclick="show('Page0');">Home</div>
+        <div class="page_btn" onclick="show('Page1');">Work Experience</div>
+        <div class="page_btn" onclick="show('Page2');">Movement</div>
+        <div class="page_btn" onclick="show('Page3');">Family & Friends</div>
+    </div>
+
+
+    <div id="main">
+        <h2 id="title"> Chloe Zheng </h2>
+        <!-- Page 0: wip -->
+        <div id="Page0" class="page">
+        </div>
+
+        <!-- Page 1: tbd -->
+        <div id="Page1" class="page" style="display:none">
+            <p>Meet Mia! She is a 7 year old torbie, living in Brooklyn, NY with her foster sister Ella. She loves naps
+                and head pats. </p>
+            <p>Use the magnifying glass to zoom in her portrait!</p>
+            <div class="img-magnifier-container">
+                <img id="miaprofile" class="img" src="../img/mia.jpg" width="500px" height="700px" alt="MIA" />
+            </div>
+        </div>
+
+        <!-- Page 2: tbd -->
+        <div id="Page2" class="page" style="display:none">
+            <p>Meet Ella! She is a 4 year old black short hair, living in Brooklyn, NY with her foster sister Mia. She
+                is an independent individual, frequently hunting for hairties and strings. </p>
+            <p>Use the magnifying glass to zoom in her portrait!</p>
+            <div class="img-magnifier-container">
+                <img id="ellaprofile" class="img" src="../img/ella.jpg" width="500px" height="700px" alt="ELLA" />
+            </div>
+        </div>
+
+        <!-- Page 3: tbd -->
+        <div id="Page3" class="page" style="display:none">
+            <p>Mia and Ella gallery! Plus some bonus pics of the cousins: Vic (Calico) & Lou (Orange)</p>
+            <div class="header" id="gallery_Header">
+                Click buttons to change grid layout:
+                <button class="gallery_btn" onclick="small()">small</button>
+                <button class="gallery_btn gallery_active" onclick="medium()">medium</button>
+                <button class="gallery_btn" onclick="large()">large</button>
+            </div>
+            <div class="gallery_row">
+                <div class="gallery_col">
+                    <img src="../img/1.jpg" style="width:100%">
+                    <img src="../img/2.jpg" style="width:100%">
+                    <img src="../img/3.jpg" style="width:100%">
+                    <img src="../img/4.jpg" style="width:100%">
+                    <img src="../img/5.jpg" style="width:100%">
+                </div>
+                <div class="gallery_col">
+                    <img src="../img/6.jpg" style="width:100%">
+                    <img src="../img/7.jpg" style="width:100%">
+                    <img src="../img/8.jpg" style="width:100%">
+                    <img src="../img/9.jpg" style="width:100%">
+                    <img src="../img/10.jpg" style="width:100%">
+                </div>
+                <div class="gallery_col">
+                    <img src="../img/11.jpg" style="width:100%">
+                    <img src="../img/12.jpg" style="width:100%">
+                    <img src="../img/13.jpg" style="width:100%">
+                    <img src="../img/14.jpg" style="width:100%">
+                    <img src="../img/15.jpg" style="width:100%">
+                </div>
+                <div class="gallery_col">
+                    <img src="../img/16.jpg" style="width:100%">
+                    <img src="../img/17.jpg" style="width:100%">
+                    <img src="../img/18.jpg" style="width:100%">
+                    <img src="../img/19.jpg" style="width:100%">
+                    <img src="../img/20.jpg" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+
+
+</body>
+
+</html>
+
+
