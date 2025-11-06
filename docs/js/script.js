@@ -28,16 +28,17 @@ function setButtonState(headerID, buttonClass, activeClass) {
 
 // Side Navigation
 function openNav() {
-    // Set the width of the side navigation to 250px and the left margin of the page content to 250px
-  document.getElementById("side_Nav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+    // Open the sidenav
+    document.getElementById("side_Nav").style.width = "100%";
 }
 
 function closeNav() {
-    // Set the width of the side navigation to 0 and the left margin of the page content to 0 
-  document.getElementById("side_Nav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
+    // Close/hide the sidenav
+    document.getElementById("side_Nav").style.width = "0";
 }
+
+
+
 
 
 function magnify(imgID, zoom) {
