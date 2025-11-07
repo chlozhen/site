@@ -138,16 +138,13 @@ button {
 }
 /* Home: General Panels */
 .left_Panel {
-    /* align-items: right; */
     text-align: right;
     width: 40%;
     padding-left: 10%;
     margin: 5 auto;
     float: left;
-    /* position: relative; */
 }
 .right_Panel {
-    /* align-items: left; */
     text-align: left;
     width: 60%;
     padding-right: 10%;
@@ -168,13 +165,13 @@ button {
 }
 #main_home_txt {
     font-family: sans-serif;
+    padding-left: 10px;
 }
 /* Work Experience */
 #center_Panel {
-    width: 700px;
-    float: center;
-    align-items: left;
     text-align: left;
+    width: 80%;
+    float: center;
     margin: 0 auto;
 }
 .resume_category{
