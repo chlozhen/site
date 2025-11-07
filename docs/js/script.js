@@ -197,7 +197,19 @@ function small() {
     }
 }
 
-setButtonState("gallery_Header", "gallery_btn", "gallery_active")
+function OLDsetButtonState(headerID, buttonClass, activeClass) {
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById(headerID);
+    var btns = header.getElementsByClassName(buttonClass);
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName(activeClass);
+            current[0].className = current[0].className.replace(" " + activeClass, "");
+            this.className += " " + activeClass;
+        });
+    }
+}
+OLDsetButtonState("gallery_Header", "gallery_btn", "gallery_active")
 
 
 

@@ -108,14 +108,14 @@ button {
 /* ******************************************************* */
 /* Main page content ************************************* */
 /* ******************************************************* */
-/* Home */
+/* General */
 #main {
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 #sitename a {
-    align-items: center;
     color:#2f1738;
+    align-items: center;
     margin-bottom: 20px;
 }
 #title {
@@ -123,50 +123,51 @@ button {
     font-family: "Bungee Shade", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    text-align: center;
     width: 100%;
 }
 .page {
-    margin: 40px;
-    flex: 0 1;
     text-align: center;
     align-items: center;
+    margin: 40px;
+    flex: 0 1;
 }
-#left_Panel {
-    width: 40%;
-    float: left;
-    align-items: right;
+.img {
+    height: auto;
+    max-width: 100%;
+    padding: 4px;
+}
+/* Home: General Panels */
+.left_Panel {
+    /* align-items: right; */
     text-align: right;
-    margin: 0 auto;
-}
-#left_column {
-    width: 200px;
-    float: right;
-}
-#portrain {align-items: inherit;}
-#box {text-align: inherit;}
-#right_Panel {
-    width: 60%;
-    float: right;
-    align-items: left;
-    text-align: left;
-    margin: 0 auto;
-}
-#right_column {
-    width: 500px;
+    width: 40%;
+    padding-left: 10%;
+    margin: 5 auto;
     float: left;
+    /* position: relative; */
+}
+.right_Panel {
+    /* align-items: left; */
+    text-align: left;
+    width: 60%;
+    padding-right: 10%;
+    margin: 5 auto;
+    float: right;
+}
+/* Home: content */
+#portrait {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 #left_home_txt {
     font-family: sans-serif;
     margin-top: 35px;
     text-align: center;
-    
 }
 #main_home_txt {
     font-family: sans-serif;
-    padding-left: 30px;
 }
 /* Work Experience */
 #center_Panel {
@@ -198,13 +199,7 @@ button {
 
 
 
-.img {
-    padding: 4px;
-    border-radius: 1px;
-    margin-bottom: 4px;
-    height: auto;
-    max-width: 100%;
-}
+
 
 /* Page: OTHER */
 .row {
