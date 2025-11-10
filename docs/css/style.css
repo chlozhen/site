@@ -91,8 +91,8 @@ button {
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 @media only screen and (max-width: 600px) {
     #main_Nav {display: none;}
@@ -101,6 +101,7 @@ button {
     #bars_Nav-container {display: none;}
     #bars_Nav {display: none;}
     #side_Nav {display: none;}
+    #center_Panel {width: 95%}
 }
 
 
@@ -140,21 +141,24 @@ button {
 .left_Panel {
     text-align: right;
     width: 40%;
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-right: 1%;
     margin: 5 auto;
     float: left;
 }
 .right_Panel {
     text-align: left;
     width: 60%;
-    padding-right: 10%;
+    padding-left: 1%;
+    padding-right: 5%;
     margin: 5 auto;
     float: right;
 }
 /* Home: content */
 #portrait {
     display: block;
-    width: 80%;
+    width: 85%;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -165,21 +169,22 @@ button {
 }
 #main_home_txt {
     font-family: sans-serif;
-    padding-left: 10px;
 }
 /* Work Experience */
-#center_Panel {
+.center_Panel {
     text-align: left;
     width: 80%;
-    float: center;
+    display: flex;
+    /* float: center; */
     margin: 0 auto;
 }
 .resume_category{
-    font-size: 20px;
+    font-size: 22px;
 }
 .resume_subhead {
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 16px;
+    font-style: normal;
     color:#2f1738;
 }
 .resume_bullets {
