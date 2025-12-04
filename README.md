@@ -2,7 +2,7 @@
 WORK IN PROGRESS
 
   TODO:
-  * add 404 page
+  * add page icon
   * clean up html into separate files
   * travel diary
   * movement profile
