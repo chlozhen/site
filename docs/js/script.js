@@ -1,3 +1,7 @@
+/////////////////////////////////////////////////
+/////////// Functions for elements //////////////
+/////////////////////////////////////////////////
+
 function show(elementID) {
     // showing a "page" elements when clicked
     // reference: http://jsfiddle.net/H4dbJ/
@@ -33,9 +37,6 @@ function setButtonState(buttonClass, activeClass) {
     }
 }
 
-// Set page buttons
-setButtonState("page_btn", "page_active")
-
 // Side Navigation
 function openNav() {
     // Open the sidenav
@@ -47,9 +48,24 @@ function closeNav() {
     document.getElementById("side_Nav").style.width = "0";
 }
 
+/////////////////////////////////////////////////
+////////////// Running Functions ////////////////
+/////////////////////////////////////////////////
+
+// Set page buttons
+setButtonState("page_btn", "page_active")
 
 
 
+
+
+
+
+
+
+/////////////////////////////////////////////////
+//////////////// Old Functions //////////////////
+/////////////////////////////////////////////////
 
 function magnify(imgID, zoom) {
     // allow users to use a magnify an image
@@ -129,8 +145,8 @@ function removeActive(jokes) {
 }
 
 // Initiate magnifying mechanism
-magnify("miaprofile", 3)
-magnify("ellaprofile", 3)
+// magnify("miaprofile", 3)
+// magnify("ellaprofile", 3)
 
 // Get joke answers and clear them
 const answer1 = 'PURR-ple'
@@ -209,7 +225,4 @@ function OLDsetButtonState(headerID, buttonClass, activeClass) {
         });
     }
 }
-OLDsetButtonState("gallery_Header", "gallery_btn", "gallery_active")
-
-
-
+// OLDsetButtonState("gallery_Header", "gallery_btn", "gallery_active")

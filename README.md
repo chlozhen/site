@@ -4,6 +4,11 @@ WORK IN PROGRESS
   TODO:
   * add 404 page
   * clean up html into separate files
+  * travel diary
+  * movement profile
+  * chinese/shanghainese language resources
+  * cooking recipes
+  * coding projects
 
 
 References:

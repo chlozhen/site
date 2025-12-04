@@ -1,0 +1,34 @@
+Category,Name,Years of Experience,Knowledge
+Topic,Machine Learning,5,5
+Topic,Data Analysis,5,5
+Topic,Statistical Analysis,4,5
+Topic,Responsible AI Research,4,5
+Topic,Data Management,1,3
+Topic,Data Engineering,1,3
+Topic,Software Development,.5,3
+Language,Python,8,5
+Language,SQL,5,5
+Language,R,3,3
+Language,Matlab,1,2
+Language,Javascript,.5,3
+Language,CSS,.5,3
+Language,HTML,.5,3
+Language,Swift,.5,3
+Language,C++/C,.5,3
+Software/Framework,Github,7,5
+Software/Framework,Jupyter,8,5
+Software/Framework,Microsoft Suite,8,5
+Software/Framework,Anaconda,6,5
+Software/Framework,Linux,5,5
+Software/Framework,Sci-kit Learn,5,5
+Software/Framework,Tensorflow,2,4
+Software/Framework,Pytorch,2,4
+Software/Framework,Keras,2,4
+Software/Framework,Apache Spark,1,3
+Software/Framework,AWS,1,3
+Software/Framework,Docker,2,3
+Software/Framework,Tableau,.2,1
+Database,SAP Business Objects Data Services,1.5,3
+Database,Sybase,2,4
+Database,PostgresSQL,1,4
+Database,MySQL,.5,4

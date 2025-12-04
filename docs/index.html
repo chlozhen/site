@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/elements.js" type="text/javascript" defer></script>
     <script src="https://kit.fontawesome.com/32976dc9ad.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,8 +69,9 @@
             </div>
         </div>
 
-        <!-- Page 1: tbd -->
+        <!-- Page 1: Career -->
         <div id="Page1" class="page" style="display:none">
+            <!-- Page 1: Professional Experience -->
             <p class="resume_category">Professional Experience</p>
             <div class="center_Panel">
                 <div class="left_Panel">
@@ -78,7 +80,7 @@
                     </div>
                 </div>
                 <div class="right_Panel">
-                    <div class="box">
+                    <div id="resume_box" class="box">
                         <p class="resume_bullets">Pacific Consulting Group</p>
                         <!-- <ol class="resume_bullets" style="list-style-type: disc;">
                             <li></li>
@@ -93,7 +95,7 @@
                     </div>
                 </div>
                 <div class="right_Panel">
-                    <div class="box">
+                    <div id="resume_box" class="box">
                         <p class="resume_bullets">Internal Revenue Service (IRS), Research, Applied Analytics and Statistics Division (RAAS), Trustworthy Analytics</p>
                         <ol class="resume_bullets" style="list-style-type: disc;">
                             <li>Developed and standardized machine learning (ML)/artificial intelligence (AI) assessment process to assess for model
@@ -117,7 +119,7 @@
                     </div>
                 </div>
                 <div class="right_Panel">
-                    <div class="box">
+                    <div id="resume_box" class="box">
                         <p class="resume_bullets">NYU Center for Responsible AI (RAI)</p>
                         <ol class="resume_bullets" style="list-style-type: disc;">
                             <li>Collaborated cross-functionally with Meta teams to build case studies on AI use cases (e.g. content moderation, advertising)</li>
@@ -134,7 +136,7 @@
                     </div>
                 </div>
                 <div class="right_Panel">
-                    <div class="box">
+                    <div id="resume_box" class="box">
                         <p class="resume_bullets">AON Devices Inc.</p>
                         <ol class="resume_bullets" style="list-style-type: disc;">
                             <li>Built end-to-end ML pipeline for human activity recognition using Python (NumPy, Tensorflow/Keras) and Matlab. Managed
@@ -145,16 +147,16 @@
                     </div>
                 </div>
             </div>
-                    
+            <!-- Page 1: Education -->
             <p class="resume_category">Education</p>
             <div class="center_Panel">
                 <div class="left_Panel">
                     <div class="box">
-                        <p class="resume_subhead">New York University<br>[2021-2023]</p>
+                        <p class="resume_subhead">New York University<br>[2021–2023]</p>
                     </div>
                 </div>
                 <div class="right_Panel">
-                    <div class="box">
+                    <div id="resume_box" class="box">
                         <p class="resume_bullets">M.S. Data Science</p>
                     </div>
                 </div>
@@ -162,67 +164,27 @@
             <div class="center_Panel">
                 <div class="left_Panel">
                     <div class="box">
-                        <p class="resume_subhead">University of Californuia, Irvine<br>[2016-2020]</p>
+                        <p class="resume_subhead">University of Californuia, Irvine<br>[2016–2020]</p>
                     </div>
                 </div>
                 <div class="right_Panel">
-                    <div class="box">
+                    <div id="resume_box" class="box">
                         <p class="resume_bullets">B.S. Computer Science, Specialization in Intelligent Systems</p>
                     </div>
                 </div>
             </div>
+            
             <p class="resume_category">Technical Knowledge</p>
         </div>
 
         <!-- Page 2: tbd -->
         <div id="Page2" class="page" style="display:none">
-            <p>Meet Ella! She is a 4 year old black short hair, living in Brooklyn, NY with her foster sister Mia. She
-                is an independent individual, frequently hunting for hairties and strings. </p>
-            <p>Use the magnifying glass to zoom in her portrait!</p>
-            <div class="img-magnifier-container">
-                <img id="ellaprofile" class="img" src="img/ella.jpg" width="500px" height="700px" alt="ELLA" />
-            </div>
+            <test-element></test-element>
         </div>
 
         <!-- Page 3: tbd -->
         <div id="Page3" class="page" style="display:none">
-            <p>Mia and Ella gallery! Plus some bonus pics of the cousins: Vic (Calico) & Lou (Orange)</p>
-            <div class="header" id="gallery_Header">
-                Click buttons to change grid layout:
-                <button class="gallery_btn" onclick="small()">small</button>
-                <button class="gallery_btn gallery_active" onclick="medium()">medium</button>
-                <button class="gallery_btn" onclick="large()">large</button>
-            </div>
-            <div class="gallery_row">
-                <div class="gallery_col">
-                    <img src="img/1.jpg" style="width:100%">
-                    <img src="img/2.jpg" style="width:100%">
-                    <img src="img/3.jpg" style="width:100%">
-                    <img src="img/4.jpg" style="width:100%">
-                    <img src="img/5.jpg" style="width:100%">
-                </div>
-                <div class="gallery_col">
-                    <img src="img/6.jpg" style="width:100%">
-                    <img src="img/7.jpg" style="width:100%">
-                    <img src="img/8.jpg" style="width:100%">
-                    <img src="img/9.jpg" style="width:100%">
-                    <img src="img/10.jpg" style="width:100%">
-                </div>
-                <div class="gallery_col">
-                    <img src="img/11.jpg" style="width:100%">
-                    <img src="img/12.jpg" style="width:100%">
-                    <img src="img/13.jpg" style="width:100%">
-                    <img src="img/14.jpg" style="width:100%">
-                    <img src="img/15.jpg" style="width:100%">
-                </div>
-                <div class="gallery_col">
-                    <img src="img/16.jpg" style="width:100%">
-                    <img src="img/17.jpg" style="width:100%">
-                    <img src="img/18.jpg" style="width:100%">
-                    <img src="img/19.jpg" style="width:100%">
-                    <img src="img/20.jpg" style="width:100%">
-                </div>
-            </div>
+            <test-element></test-element>
         </div>
     </div>
 
@@ -232,6 +194,7 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    
 
 
 </body>
